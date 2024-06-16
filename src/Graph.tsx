@@ -60,7 +60,7 @@ class Graph extends Component<IProps, {}> {
     }
   }
 
-  componentDidUpdate();{
+  componentDidUpdate() {
     // Everytime the data props is updated, insert the data into Perspective table
     if (this.table) {
       // As part of the task, you need to fix the way we update the data props to
@@ -72,9 +72,10 @@ class Graph extends Component<IProps, {}> {
           top_ask_price: el.top_ask && el.top_ask.price || 0,
           top_bid_price: el.top_bid && el.top_bid.price || 0,
           timestamp: el.timestamp,
-        };
-      }));
-    }
+         };
+       }));
+     }
+   }
   }
 
 
